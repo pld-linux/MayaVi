@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://dl.sourceforge.net/mayavi/%{name}-%{version}.tar.gz
+# Source0-md5:	0a169f794c633ca1000c6f0462b633f2
 URL:		http://mayavi.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
