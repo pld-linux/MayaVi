@@ -5,7 +5,7 @@ Version:	1.1
 Release:	1
 License:	GPL
 Group:		Applications/Graphics
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/mayavi/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/mayavi/%{name}-%{version}.tar.gz
 URL:		http://mayavi.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
