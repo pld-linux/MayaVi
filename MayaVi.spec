@@ -22,18 +22,19 @@ danych naukowych. Jest napisane w Pythonie i u¿ywa do grafiki VTK
 (Visualization Toolkit). GUI napisane jest przy u¿yciu Tkinter.
 
 %prep
-%setup  -q
+%setup -q
 
 %build
+python setup.py build
 
 %install
-python setup.py install --prefix $RPM_BUILD_ROOT%{_usr}
+python setup.py install --root $RPM_BUILD_ROOT 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_bindir}/*
+%attr(755,root,root) %{_bindir}/*
 %{py_scriptdir}/site-packages/mayavi
 %{py_scriptdir}/site-packages/vtkPipeline
