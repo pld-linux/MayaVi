@@ -39,5 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%{py_scriptdir}/site-packages/mayavi
-%{py_scriptdir}/site-packages/vtkPipeline
+%{py_sitescriptdir}/mayavi
+%{py_sitescriptdir}/vtkPipeline
