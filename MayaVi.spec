@@ -1,12 +1,12 @@
 Summary:	MayaVi is easy to use scientific data visualizer
 Summary(pl):	MayaVi to ³atwe w u¿yciu narzêdzie do wizualizacji danych naukowych
 Name:		MayaVi
-Version:	1.1
+Version:	1.3
 Release:	1
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://dl.sourceforge.net/mayavi/%{name}-%{version}.tar.gz
-# Source0-md5:	0a169f794c633ca1000c6f0462b633f2
+# Source0-md5:	38ae9dbe09a6bdb35289d8d6d98c65ba
 URL:		http://mayavi.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,10 +27,13 @@ danych naukowych. Jest napisane w Pythonie i u¿ywa do grafiki VTK
 %build
 
 %install
-rm -rf $RPM_BUILD_ROOT
+python setup.py install --prefix $RPM_BUILD_ROOT%{_usr}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%{_bindir}/*
+%{py_scriptdir}/site-packages/mayavi
+%{py_scriptdir}/site-packages/vtkPipeline
