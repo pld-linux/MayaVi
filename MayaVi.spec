@@ -28,7 +28,10 @@ danych naukowych. Jest napisane w Pythonie i u¿ywa do grafiki VTK
 python setup.py build
 
 %install
-python setup.py install --root $RPM_BUILD_ROOT 
+rm -rf $RPM_BUILD_ROOT
+
+python setup.py install \
+	--root $RPM_BUILD_ROOT 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
