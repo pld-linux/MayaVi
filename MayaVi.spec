@@ -3,11 +3,14 @@ Summary(pl):	MayaVi to ³atwe w u¿yciu narzêdzie do wizualizacji danych naukowych
 Name:		MayaVi
 Version:	1.3
 Release:	1
-License:	GPL
+License:	BSD
 Group:		Applications/Graphics
 Source0:	http://dl.sourceforge.net/mayavi/%{name}-%{version}.tar.gz
 # Source0-md5:	38ae9dbe09a6bdb35289d8d6d98c65ba
 URL:		http://mayavi.sourceforge.net/
+BuildRequires:	python
+BuildRequires:	python-devel
+Requires:	python-tkinter
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,6 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc doc/guide/*.html doc/CREDITS.txt doc/NEWS.txt doc/README.txt doc/TODO.txt
 %attr(755,root,root) %{_bindir}/*
 %{py_sitescriptdir}/mayavi
 %{py_sitescriptdir}/vtkPipeline
