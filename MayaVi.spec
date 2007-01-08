@@ -1,12 +1,12 @@
 Summary:	MayaVi is easy to use scientific data visualizer
 Summary(pl):	MayaVi to ³atwe w u¿yciu narzêdzie do wizualizacji danych naukowych
 Name:		MayaVi
-Version:	1.4
+Version:	1.5
 Release:	1
 License:	BSD
 Group:		Applications/Graphics
 Source0:	http://dl.sourceforge.net/mayavi/%{name}-%{version}.tar.gz
-# Source0-md5:	9bad679a49ad1e6c820d8d95622c40ed
+# Source0-md5:	494a29e38b9e808157bae9daaf9fe044
 URL:		http://mayavi.sourceforge.net/
 BuildRequires:	python
 BuildRequires:	python-devel
