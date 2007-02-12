@@ -1,5 +1,5 @@
 Summary:	MayaVi is easy to use scientific data visualizer
-Summary(pl):	MayaVi to ³atwe w u¿yciu narzêdzie do wizualizacji danych naukowych
+Summary(pl.UTF-8):   MayaVi to Å‚atwe w uÅ¼yciu narzÄ™dzie do wizualizacji danych naukowych
 Name:		MayaVi
 Version:	1.5
 Release:	1
@@ -19,10 +19,10 @@ written in Python and uses the amazing Visualization Toolkit (VTK) for
 the graphics. It provides a GUI written using Tkinter. MayaVi is free
 and distributed under the GNU GPL. It is also cross platform.
 
-%description -l pl
-MayaVi to wolnodostêpne, ³atwe w u¿yciu narzêdzie do wizualizacji
-danych naukowych. Jest napisane w Pythonie i u¿ywa do grafiki VTK
-(Visualization Toolkit). GUI napisane jest przy u¿yciu Tkinter.
+%description -l pl.UTF-8
+MayaVi to wolnodostÄ™pne, Å‚atwe w uÅ¼yciu narzÄ™dzie do wizualizacji
+danych naukowych. Jest napisane w Pythonie i uÅ¼ywa do grafiki VTK
+(Visualization Toolkit). GUI napisane jest przy uÅ¼yciu Tkinter.
 
 %prep
 %setup -q
