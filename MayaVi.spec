@@ -1,5 +1,5 @@
 Summary:	MayaVi is easy to use scientific data visualizer
-Summary(pl.UTF-8):   MayaVi to łatwe w użyciu narzędzie do wizualizacji danych naukowych
+Summary(pl.UTF-8):	MayaVi to łatwe w użyciu narzędzie do wizualizacji danych naukowych
 Name:		MayaVi
 Version:	1.5
 Release:	1
