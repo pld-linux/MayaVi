@@ -28,12 +28,12 @@ danych naukowych. Jest napisane w Pythonie i używa do grafiki VTK
 %setup -q
 
 %build
-python setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install \
+%py_install \
 	--root $RPM_BUILD_ROOT 
 
 %clean
