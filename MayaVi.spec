@@ -8,6 +8,7 @@ Group:		Applications/Graphics
 Source0:	http://dl.sourceforge.net/mayavi/%{name}-%{version}.tar.gz
 # Source0-md5:	494a29e38b9e808157bae9daaf9fe044
 URL:		http://mayavi.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python
 BuildRequires:	python-devel
 Requires:	python-tkinter
